@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Año Nuevo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">   
+</head>
+
+<body>
+    <div id="carta" class="contenedor-carta">
+      <h1 class="titulo">Feliz Año Nuevo</h1>
+      <div id="inicio" class="inicio">
+        <button id="abrir-carta">Abre tu Carta de Año Nuevo</button>
+      </div>
+          
+      <div id="contenido" class="contenido-carta" style="display: none;">
+        <form id="formulario-elecciones">
+          <label for="nombre">¿Quién eres?</label>
+          <select id="nombre" name="nombre">
+            <option value="Mami">Mami</option>
+            <option value="Papi">Papi</option>
+            <option value="Ñaño Stiven">Ñaño Stiven</option>
+            <option value="Ñaño Charlie">Ñaño Charlie</option>
+          </select>
+          <button type="submit">Ver Mensaje</button>
+        </form>
+        
+      
+        <div id="mensaje" class="mensaje"></div>
+      </div>
+      <div class="animacion-2025" id="animacion-2025">2025</div>  
+    </div>
+    <script src="carta.js"></script>
+</body>
+</html>
