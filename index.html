@@ -5,10 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz Año Nuevo</title>
-    <link rel="stylesheet" type="text/css" href="style.css">   
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
 </head>
 
 <body>
+   <!-- Canvas for Fireworks -->
+  <canvas id="fireworksCanvas"></canvas>
+
+<!--Card -->
     <div id="carta" class="contenedor-carta">
       <h1 class="titulo">Feliz Año Nuevo</h1>
       <div id="inicio" class="inicio">
@@ -17,6 +24,7 @@
           
       <div id="contenido" class="contenido-carta" style="display: none;">
         <form id="formulario-elecciones">
+          <section>
           <label for="nombre">¿Quién eres?</label>
           <select id="nombre" name="nombre">
             <option value="Mami">Mami</option>
@@ -24,14 +32,24 @@
             <option value="Ñaño Stiven">Ñaño Stiven</option>
             <option value="Ñaño Charlie">Ñaño Charlie</option>
           </select>
-          <button type="submit">Ver Mensaje</button>
+        </section>
+
+          <section>
+
+          <label for="password">Ingresa la contraseña:</label>
+          <input type="password" id="password" placeholder="Contraseña" required>
+          </section>
+
+          <button id= "button" type="submit">Ver Mensaje</button>
         </form>
         
       
         <div id="mensaje" class="mensaje"></div>
       </div>
-      <div class="animacion-2025" id="animacion-2025">2025</div>  
+      <div id="three-container" style="width: 300px; height: 300px; margin: 0 auto;"></div>
+
     </div>
     <script src="carta.js"></script>
+    <script src="fireworks.js"></script>
 </body>
 </html>

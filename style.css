@@ -1,15 +1,39 @@
+/* Night sky background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #001f3f, #011029);
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Fireworks canvas styling */
+#fireworksCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction with the canvas */
+}
+
+
+
+
 /* Contenedor de la carta */
 .contenedor-carta {
+  font-family: 'Arial', sans-serif; 
   width: 300px;
   height: 400px;
-  background: #f9f9f9;
-  border: 2px solid #ccc;
+  background: #f1dec0;
+  border: 2px solid #f69797;
   padding: 20px;
   position: relative;
   text-align: center;
   transition: transform 1s ease-in-out;
   margin: 50px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(245, 6, 6, 0.1);
+  border-radius: 10px;
 }
 
 .contenedor-carta:hover {
@@ -27,7 +51,7 @@
 #inicio button {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #4CAF50;
+  background-color: #de2c2c;
   color: white;
   border: none;
   cursor: pointer;
@@ -35,7 +59,7 @@
 }
 
 #inicio button:hover {
-  background-color: #45a049;
+  background-color: #c60e0e;
 }
 
 /* Contenido de la carta */
@@ -95,4 +119,46 @@
       transform: translateY(0); /* Llega al centro */
       opacity: 1; /* Se vuelve visible */
   }
+}
+
+/* 2025 STYLE */
+#three-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  background: transparent; /* Fondo transparente */
+}
+
+#three-container canvas {
+  display: block;
+}
+
+/* Si deseas ajustar el tamaño general del texto, utiliza estas propiedades */
+.rotating-text {
+  font-size: 48px;
+  color: red;
+}
+
+
+/*cositas extras*/
+
+#nombre {
+margin: 5px;
+border-radius: 4px;
+border-color: #ccc;
+
+}
+#password{
+  margin: 5px;
+  border-radius: 4px;
+  border-color: #ccc;
+}
+
+#button{
+  margin: 5px;
+  border-radius: 4px;
+  border-color: #ccc;
+  background-color: rgb(255, 155, 155);
 }
